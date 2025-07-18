@@ -2,8 +2,9 @@
 import axios from "axios";
 
 export default function useAxios() {
+  const API = import.meta.env.VITE_API_URL;
   const instance = axios.create({
-    baseURL: "http://127.0.0.1:8000/api/",
+    baseURL: API,
   });
 
   instance.interceptors.request.use(

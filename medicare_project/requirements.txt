@@ -7,3 +7,5 @@ django-cors-headers~=4.1
 psycopg2-binary~=2.9
 celery[redis]~=5.4
 pytest-django~=4.8
+gunicorn
+whitenoise

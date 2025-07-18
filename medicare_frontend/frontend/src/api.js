@@ -1,7 +1,10 @@
+// frontend/src/api.js
 import axios from "axios";
 
+const API_BASE_URL = import.meta.env.VITE_API_URL;
+
 const API = axios.create({
-  baseURL: "http://127.0.0.1:8000/api/",
+  baseURL: `${API_BASE_URL}/api/`, // on garde /api/ si l’API Django est sous ce chemin
 });
 
 API.interceptors.request.use((config) => {

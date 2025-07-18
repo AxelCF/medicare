@@ -9,3 +9,4 @@ celery[redis]~=5.4
 pytest-django~=4.8
 gunicorn
 whitenoise
+python-decouple
